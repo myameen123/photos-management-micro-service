@@ -94,6 +94,7 @@ export const uploadImage = async (req, res, next) => {
       success: true,
       message: "Image uploaded successfully",
       data: newImage,
+      event,
     });
   } catch (error) {
     return next(error);
